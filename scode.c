@@ -9,7 +9,8 @@ int main(int argc, char **argv)
 		printf("Input the hexstream of your shellcode\n");
 		return 1;
 	}
-
+	// HWND hWnd = GetConsoleWindow();
+        // ShowWindow(hWnd, SW_HIDE );
 	int sz = strlen(argv[1]);
 	int nsz = sz / 2;
 	const char *pos = argv[1];
